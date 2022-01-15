@@ -72,7 +72,7 @@ margin-top: 15px;
 .transition:hover
 {
 transform: scale(1.5);
-transition: transform 2s ease-in-out;
+transition: transform 1.5s ease-in-out;
 }
 
 
@@ -185,6 +185,44 @@ footer
 /* Media Queries */
 
 
-/* mobile device */
-
-
+/* Media Queries */
+  
+    /* Media Queries for mobile device*/
+    @media only screen and (max-width: 688px){
+        .container
+        {
+           width: 100%;
+        }
+        .main-product,  .commit-part
+        {
+            grid-template-columns: repeat(1, 1fr);
+              }
+              .popular-collections
+              {
+                grid-template-columns: repeat(1, 1fr);
+                
+              }     
+        .product, .commit-part
+        {
+            text-align: center;
+            
+        }
+    }
+    
+         /* for tablet device  */
+       @media only screen and (min-width:688px) and (max-width:992px) {
+           
+        .container{
+            width: 100%;
+            
+        }
+         .popular-collections, .commit-part{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .product, .commit-part{
+            text-align: center;
+            
+        }
+    }
+    
+    
