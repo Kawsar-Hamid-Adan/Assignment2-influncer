@@ -63,3 +63,40 @@ body
     color: white;
     margin-top: 50px;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 688px){
+    .container
+    {
+       width: 100%;
+    }
+    .head, .collection, .nine-box
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+/* tablet device  */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .head, .collection, {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nine-box
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+/* 4k device */
+    @media only screen and (min-width:993px) and (max-width:3012px) {
+        .container{
+            width: 100%;
+        }
+        .head, .collection, {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .nine-box
+        {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
