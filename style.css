@@ -7,7 +7,14 @@ main{
     
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+}
+
+.main-camera img{
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+}
 
 nav ul{
     list-style: none;
@@ -137,9 +144,10 @@ color: #FFC014;
     grid-column-gap: 15px;
     
 }
-.commit
+.commit img
 {
    display: flex;
+   border-radius: 20px;
 }
 footer
 {
@@ -154,7 +162,7 @@ footer
     {
        width: 100%;
     }
-    .main-product,  .commit-part
+    .main-product,  .commit-part, footer
     {
         grid-template-columns: repeat(1, 1fr);
           }
@@ -165,7 +173,7 @@ footer
           }
         
         
-    .product, .commit-part
+    .product, .commit-part, footer
     {
         text-align: center;
         
