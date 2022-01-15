@@ -71,8 +71,11 @@ margin-top: 15px;
 /* hover */
 .transition:hover
 {
-transform: scale(1.5);
-transition: transform 1.5s ease-in-out;
+/* transform: scale(1.5);
+transition: transform 1.5s ease-in-out; */
+transform:skew(30deg, 360deg);
+transition: transform 2s ease-in-out;
+}
 }
 
 
