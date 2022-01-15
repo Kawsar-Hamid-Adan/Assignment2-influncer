@@ -10,7 +10,7 @@ body
     width: 50%;
     padding: 5%;
 }
-.mission{
+.collection{
     padding-left: 40%;
 
 }
@@ -28,21 +28,24 @@ body
     border: 2px solid rgb(118, 186, 212);
     background-image: linear-gradient(rgb(11, 186, 255), rgb(0, 110, 255));
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 7px;
 }
-.third-Box-width
-{
+
+#nine{
     display: grid;
     grid-template-columns: repeat(3,3fr);
+}
+.nine-box
+{
     background-color: rgb(230, 231, 247);
     padding: 2%;
     border-radius: 20px;
-    margin: 20px;
+    margin: 15px;
     filter: drop-shadow(0px 6px rgb(193, 195, 204));
     padding-left: 100px;
   
 }
-.third-Box-width img{
+.nine-box img{
     border-radius: 20px;
 }
     section{
