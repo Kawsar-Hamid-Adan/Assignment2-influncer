@@ -3,6 +3,10 @@ body{
 font-family: 'Roboto Condensed', sans-serif;
 
 }
+
+
+/* main */
+
 main{
     
     display: flex;
@@ -10,12 +14,14 @@ main{
     align-items: center;
 }
 
-.main-camera img{
+.iphone-img img{
     border-radius: 20px;
     width: 200px;
     height: 250px;
+    margin-left: 200px;
+    margin-top: 50px;
 }
-
+/* nav bar */
 nav ul{
     list-style: none;
     display: flex;
@@ -36,8 +42,12 @@ nav li
 .link
 {
     display: flex;
+margin-top: 15px;
     
 }
+
+
+/* background part */
 .container
 {  
     
@@ -56,11 +66,18 @@ nav li
     grid-column-gap: 20px;
     
 }
+
+
+/* hover */
 .transition:hover
 {
 transform: scale(1.5);
 transition: transform 2s ease-in-out;
 }
+
+
+
+/* button */
 
 .button
 {
@@ -76,7 +93,6 @@ transition: transform 2s ease-in-out;
 {
     display: flex;
     list-style: none;
-    
     justify-content: center;
     
 }
@@ -88,14 +104,17 @@ transition: transform 2s ease-in-out;
 }
 
 /* Popular Collection */
-
+.section-title{
+    text-align: center;
+}
 .popular-collections
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-} 
+
+    } 
 .product
 {
     background-color: rgb(230, 231, 247);
@@ -103,8 +122,6 @@ transition: transform 2s ease-in-out;
     border-radius: 20px;
     margin: 10px;
     filter: drop-shadow(0px 6px rgb(193, 195, 204));
-
-
 
 }
 .ProductOfImage img{
@@ -117,6 +134,14 @@ transition: transform 2s ease-in-out;
 .product-detail
 {
     margin-left: 10px;
+}
+
+
+.see-more{
+color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align :right; 
+    
 }
 .fa-star .fa-star-half-alt
 {
@@ -153,45 +178,13 @@ footer
 {
     text-align: center;
     color: white;
-    background-color: rgb(22, 5, 97);
+    background-color: rgb(12, 4, 44);
     width: 100%;
 }
-/* Media Queries */
-@media only screen and (max-width: 688px){
-    .container
-    {
-       width: 100%;
-    }
-    .main-product,  .commit-part, footer
-    {
-        grid-template-columns: repeat(1, 1fr);
-          }
-          .popular-collections
-          {
-            grid-template-columns: repeat(1, 1fr);
-            
-          }
-        
-        
-    .product, .commit-part, footer
-    {
-        text-align: center;
-        
-    }
-}
 
-     /* tablet device  */
-   @media only screen and (min-width:688px) and (max-width:992px) {
-       
-    .container{
-        width: 100%;
-        
-    }
-     .popular-collections, .commit-part{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    
-}
+/* Media Queries */
+
+
+/* mobile device */
 
 
